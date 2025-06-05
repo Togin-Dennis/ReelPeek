@@ -1,0 +1,87 @@
+.maindiv
+{
+  background-color: rgb(23, 23, 23); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vw;
+  width: 100%;
+  min-height: 200px;
+  max-height: 270px;
+  flex-direction: column;
+  position: relative;
+  
+}
+
+.footerdiv
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+    width: min-content;
+
+}
+.socialbutton
+{
+
+background-color: transparent;
+padding: 0;
+border: none;
+margin: 0;
+height: min-content;
+padding: 10px;
+}
+.Social
+{
+width:1.7vw ;
+height: 1.7vw;
+max-width:25px;
+max-width:25px ;
+min-width:20px;
+min-height:20px ;
+color: white;
+}
+.copyright {
+  position: absolute;
+  bottom: 5%;
+  color:grey;
+  font-size: clamp(11px, 1vw, 14px);
+  
+}
+.Textbuttondiv
+{
+    top:25%;
+ position: absolute;
+ left: 5%;
+ display: flex;
+ flex-direction: column;
+ gap: 9%;
+ height: 100%;
+}
+
+.Textbutton
+{
+color: grey;
+background-color: transparent;
+padding: 0;
+border: none;
+margin: 0;
+height: min-content; 
+font-weight: 500;
+text-align: start;
+font-size: clamp(11px, 1vw, 13px);
+}
+
+.Textbutton:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.socialbutton:hover{
+    transform: scale(1.5);
+     cursor: pointer;
+}

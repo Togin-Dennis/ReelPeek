@@ -1,0 +1,21 @@
+ .full-height {
+      min-height: 100vh; /* Viewport Height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+
+    }
+
+    .Refreshbutton
+    {
+        padding: 0.7%;
+        margin: 2%;
+        background-color: rgba(0, 0, 0, 0.227);
+        color: white;
+        border: 0.1vw solid white;
+        border-radius: 10px;
+    }
