@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 function SmallPosters(props) {
 const [hoverPosition, setHoverPosition] = useState('right');
 const navigate = useNavigate()
-
+const [notouch, setnotouch] = useState(true);
 const [hoveredId, setHoveredId] = useState(null);
 const [smallposterimage,setsmallposterimage] = useState([])
  const timer = useRef(null);
@@ -28,6 +28,12 @@ useEffect(
   
       }
     ).catch(()=>{navigate('/404')}):setsmallposterimage(props.Data )
+
+
+  if (window.matchMedia("(pointer: coarse)").matches) {
+  setnotouch(false)
+}
+
   },[props.url, props.Data]
 )
 
@@ -60,7 +66,7 @@ if (rect.left < windowWidth / 2) {
          <h3 className='Title'>{props.title}</h3>
   <div className='sidescrollwrapper'>
 {   
-props.ScrollButton &&
+props.ScrollButton && notouch &&
 <button
           onClick={() => {
             if (containerRef.current) {
@@ -75,8 +81,16 @@ props.ScrollButton &&
 
 
           
-       <div className={props.wrapMode ? 'imagedivWrap': 'imagediv'}ref={containerRef}>
+       <div className={props.wrapMode ? 'imagedivWrap': 'imagediv'}ref={containerRef}
+       
+       style={(props.ScrollButton && !notouch) ? { marginLeft:'3.5%'} : undefined}
 
+       
+       >
+{
+  console.log('ScrollButton:', props.ScrollButton, 'notouch:', notouch)
+
+}
 
 
 
@@ -139,7 +153,7 @@ props.ScrollButton &&
      
 
         </div> 
-{  props.ScrollButton &&    <button
+{  props.ScrollButton &&   notouch && <button
   onClick={() => {
     if (containerRef.current) {
       containerRef.current.scrollLeft += 1000; // ✅ Corrected here

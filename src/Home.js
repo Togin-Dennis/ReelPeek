@@ -21,7 +21,7 @@ function Home() {
       <SmallPosters title='Popular Malayalam Movies' url={malayalamMovies} isNormal={true} vertical={true} wrapMode={false} ScrollButton={true} />
       <SmallPosters title='Action Movies' url={Baseurl + actionmovie} isNormal={true} vertical={true} wrapMode={false} ScrollButton={true} />
       <SmallPosters title='Comedy Movies' url={ComedyMovies} isNormal={true} vertical={true} wrapMode={false} ScrollButton={true} />
-      <SmallPosters title='Popular Inidan Movies' url={PopolarinIndiaMovies} isNormal={true} vertical={true} wrapMode={false} ScrollButton={true} />
+      <SmallPosters title='Popular Indian Movies' url={PopolarinIndiaMovies} isNormal={true} vertical={true} wrapMode={false} ScrollButton={true} />
       <SmallPosters title='Horror Movies' url={HorrorMovies} isNormal={true} vertical={true} wrapMode={false} ScrollButton={true} />
       <SmallPosters title='Romance Movies' url={RomanceMovies} isNormal={true} vertical={true} wrapMode={false} ScrollButton={true} />
       <SmallPosters title='Documentaries' url={Documentaries} isNormal={true} vertical={true} wrapMode={false} ScrollButton={true} />
