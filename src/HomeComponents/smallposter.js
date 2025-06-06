@@ -14,6 +14,7 @@ const [notouch, setnotouch] = useState(true);
 const [hoveredId, setHoveredId] = useState(null);
 const [smallposterimage,setsmallposterimage] = useState([])
  const timer = useRef(null);
+ const [Dataloaded,setDataloaded] = useState(false)
 
   const containerRef = useRef(null);
 useEffect(
@@ -25,6 +26,7 @@ useEffect(
       {
   
   setsmallposterimage(responce.data.results)
+  setDataloaded(true)
   
       }
     ).catch(()=>{navigate('/404')}):setsmallposterimage(props.Data )
@@ -60,8 +62,13 @@ if (rect.left < windowWidth / 2) {
     setHoveredId(null);         // Hide hover immediately
   };
 
-
-  return (
+if(Dataloaded==false)
+{
+  return(null)
+}
+else
+ {
+   return (
     <div className={props.isNormal ? 'smallpostersnormal' : 'smallposters'}>
          <h3 className='Title'>{props.title}</h3>
   <div className='sidescrollwrapper'>
@@ -87,11 +94,6 @@ props.ScrollButton && notouch &&
 
        
        >
-{
-  console.log('ScrollButton:', props.ScrollButton, 'notouch:', notouch)
-
-}
-
 
 
        {
@@ -167,6 +169,7 @@ props.ScrollButton && notouch &&
       
     </div>
   )
+ }
 }
 
 export default SmallPosters

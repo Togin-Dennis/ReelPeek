@@ -58,12 +58,13 @@
   
 
 }
-/*loading animation
 
 
-/* .loadingdiv
+
+ .loadingdiv
 {
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 height: 100%;
@@ -79,15 +80,13 @@ height: 100%;
     padding: 1.2%;
     animation: spining 1s linear infinite;
 }
- */
 
-/* 
 
 @keyframes spining
 {
 0% {transform: rotate(0deg);}
 100%{transform: rotate(360deg);}
-} */
+} 
 
 
 
@@ -190,15 +189,27 @@ border-radius: 20px;
 
 .loadingblur
 {
-    opacity:0;
-  transition: opacity 1.5s ease-in-out;
+  animation: imageblur 1.5s ease-in-out forwards;
 }
 
-.loadingblur.imageloaded
+
+@keyframes imageblur
 {
-    opacity: 1;
+0%{ opacity: 0}
+100%{opacity: 1;}
 }
 
+.Firstblur {
+  opacity: 1;
+
+animation: loadingblur 0.5s linear forwards;
+}
+
+@keyframes loadingblur
+{
+0%{ opacity: 1}
+100%{opacity: 0;}
+}
 
 
 
