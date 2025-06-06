@@ -25,7 +25,7 @@ function Poster() {
           img.onload = () => {
             setimageloaded(true)
             setTrending(selected);
-             setTimeout(() =>setDataloaded(true), 600); // SHORT DELAY to trigger transition
+             setTimeout(() =>setDataloaded(true), 550); // SHORT DELAY to trigger transition
              setTimeout(() =>setIsLoading(false), 500); // SHORT DELAY to trigger transition
           };
         }
