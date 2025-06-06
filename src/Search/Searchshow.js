@@ -11,6 +11,7 @@ const navigate=useNavigate()
 const [SearchedDatas, setSearchedDatas] = useState([]);
 
   useEffect(() => {
+    
     if (location.state?.SearchedData) {
       setSearchedDatas(location.state.SearchedData);
     }
@@ -22,7 +23,7 @@ const [SearchedDatas, setSearchedDatas] = useState([]);
     <button className='BackButton'  onClick={()=>{navigate('/')}}>Back To Home</button>
     </div>  
   <div className='Showresult'>  
-   
+ 
    <SmallPosters title={`Searched Results : ${SearchedDatas.length} `} url='' Data={SearchedDatas} isNormal={true} vertical={true}
    
     wrapMode={true} ScrollButton={false}

@@ -20,8 +20,9 @@ const [smallposterimage,setsmallposterimage] = useState([])
 useEffect(
   ()=>
   {
-    props.url ?
-    axios.get(props.url).then(
+   if(props.url)
+   {
+ axios.get(props.url).then(
       (responce)=>
       {
   
@@ -29,7 +30,13 @@ useEffect(
   setDataloaded(true)
   
       }
-    ).catch(()=>{navigate('/404')}):setsmallposterimage(props.Data )
+    ).catch(()=>{navigate('/404')})
+   }
+   else
+   {
+setsmallposterimage(props.Data)
+ setDataloaded(true)
+   }
 
 
   if (window.matchMedia("(pointer: coarse)").matches) {
