@@ -31,20 +31,21 @@
 - 🌐 Hosted freely on **GitHub Pages**
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Togin-Dennis/ReelPeek/main/public/preview.gif" alt="ReelPeek Demo Preview" width="85%">
+  <img src="https://raw.githubusercontent.com/Togin-Dennis/ReelPeek/main/public/preview.gif" alt="ReelPeek Demo Preview 1" width="45%" style="margin-right: 10px;">
+  <img src="https://raw.githubusercontent.com/Togin-Dennis/ReelPeek/main/public/screenshot.png" alt="ReelPeek Demo Preview 2" width="45%">
 </p>
 
 ---
 
 ## ✨ Key Features
 
-- ✅ **Search Instantly** by movie title
-- 🎬 **Watch Official Trailers** inline
-- 🗓️ View **Release Dates & Overviews**
-- 📱 Fully **Responsive Design**
-- ⚡ Fast, simple, and smooth UI
-- 🚀 Easy hosting with **GitHub Pages**
-- 🔒 No user login required
+- ✅ **Search Instantly** by movie title  
+- 🎬 **Watch Official Trailers** inline  
+- 🗓️ View **Release Dates & Overviews**  
+- 📱 Fully **Responsive Design**  
+- ⚡ Fast, simple, and smooth UI  
+- 🚀 Easy hosting with **GitHub Pages**  
+- 🔒 No user login required  
 
 ---
 
