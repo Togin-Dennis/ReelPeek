@@ -1,0 +1,287 @@
+
+
+.smallposters {
+  position: relative;
+  margin-top: -7%;
+  margin-left: 0;
+
+  width: 100%;
+
+
+}
+.smallpostersnormal {
+  padding-top: 3%;
+  position:relative;
+  margin-top: clamp(50px ,4vw, 70px);
+  margin-bottom: 3%;
+  margin-left: 0;
+  width: 100%;
+
+
+}
+
+.imagediv, .imagedivWrap {
+  scroll-behavior: smooth;
+  overflow-x: auto; /* Ensure it's scrollable */
+  display: flex;
+  gap: 10px; /* optional spacing between images */
+}
+
+.sidescrollwrapper {
+  display: flex;
+  align-items: stretch; /* Make buttons match image height */
+  gap: 10px;
+
+}
+
+.sidescrollbutton {
+  background-color: rgba(93, 91, 91, 0.092);
+  color: white;
+  border: none;
+  padding: 0.49% 0.89%;
+  font-size: clamp(11px, 2vw, 19px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Set width and let height stretch */
+  min-width: 30px;
+  height: auto;
+  opacity: 0.7;
+  
+}
+.sidescrollbutton:hover
+{
+  opacity: 1;
+  
+}
+
+
+
+.image-container {
+  position: relative;
+  
+}
+.imagediv ,.imagedivWrap
+{
+  display:flex;
+}
+.imagediv {
+
+  overflow-x: scroll;
+
+ -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.imagedivWrap {
+
+  flex-wrap:wrap;
+  justify-content:center;
+  gap: 1vw;
+  margin: 2%;
+  margin-top: 4%;
+  width:100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.imagediv::-webkit-scrollbar {
+  display: none;
+}
+.Imagebox {
+  position: absolute;
+  top:auto;
+  color: white;
+  font-size: clamp(10px, 2.5vw, 19px);
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 4px;
+  bottom: 0px;
+ 
+}
+.Image,.Verticalimage
+{
+width: 20vw;
+height: auto;
+transition: transform 0.2s ease-in-out;  
+will-change: transform;
+scroll-snap-align: start;
+background-color: rgba(30, 29, 29, 0.377);  
+}
+.Image {
+           /* Responsive to viewport width */
+  max-width: 235px;      /* Don't go bigger than this */
+  min-width: 192px;        
+  aspect-ratio: 16 / 9.5; 
+  color: gray;
+  margin-right: 0.5vw;
+  border-radius: 3px;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+
+.Verticalimage
+{         /* Responsive to viewport width */
+  max-width: 170px;      /* Don't go bigger than this */
+  min-width: 100px;  
+  aspect-ratio: 9/13.5;           /* Let height adjust based on width */
+  margin-right: 1vw;
+  border-radius: 3px;
+  object-fit: fill;
+  
+}
+
+
+.fade-in-image {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.fade-in-image.loaded {
+  opacity: 1;
+}
+
+
+.Image:hover
+{
+  transform: scale(1.08);
+}
+
+
+.Verticalimage:hover
+{
+  transform: scale(1.05);
+}
+
+.Title {
+  padding-left: 3%;
+  color: white;
+  font-size: clamp(10px, 2.5vw, 20px);
+  padding-bottom: 1.5%;
+  font-weight: 700;
+  opacity: 90%;
+}
+
+/* @media screen and (max-width: 600px) {
+  .Image {
+    width: 150px;
+    height: auto;
+    aspect-ratio: 16 / 9; 
+  }
+} */
+
+.imgsectionandhover
+{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.detailedhover
+{
+  background-color: black;
+ 
+  position: absolute;
+  min-width:250px ;
+  max-width:545px ;
+  width: 30.2vw;
+  height:auto;
+  aspect-ratio: 16/10;  
+  min-height: auto;
+  background-size: cover;
+  margin-right: 10px;
+  z-index: 3;
+  border-radius: 3px;
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: Detailshoveranimation 0.5s linear 0s forwards;
+  will-change: transform;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  
+}
+/* Appear to the right */
+.hover-right {
+  left: 0%;
+  transform-origin: left;
+}
+
+/* Appear to the left */
+.hover-left {
+  right: 0%;
+  transform-origin: right;
+}
+@keyframes Detailshoveranimation {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+
+
+
+.TitleHover
+{
+  color: white;
+   font-size:  clamp(15px, 1vw, 25px);
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.336);
+}
+.descriptionHover
+{
+   display: -webkit-box;
+  -webkit-line-clamp: 5; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  color: white;
+  font-size:  clamp(11px, 1vw, 14px);
+
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: rgba(0, 0, 0, 0.336);
+}
+.releasedateHover
+{
+  color: white;
+  font-size:  clamp(11px, 1vw, 14px);
+padding: 2%;
+  background-color: rgba(0, 0, 0, 0.336);
+}
+
+ .HoverButton
+{
+     margin: 2%;
+     width:max-content;
+     display: flex;
+     align-items: center;
+     padding-top: 1.2%;
+     padding-bottom: 1.2%;
+     padding-left: 1.5%;
+     padding-right: 1.5%;
+     background-color: white;
+     color: black;
+     font-weight: 700;
+     border: none;
+     border-radius: 5px;
+     cursor:pointer;
+     font-size: clamp(12px, 0.9vw, 18px);  
+} 
+.DetailedButton
+{
+    padding-right: 6%;
+    width: 1.5vw;
+    max-width: 25px;
+    min-width: 8px;
+}
+.HoverButton:hover{
+    background-color: rgba(255, 255, 255, 0.512);
+}
+
