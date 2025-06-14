@@ -2,7 +2,7 @@
   "name": "ReelPeek",
   "version": "0.1.0",
   "private": true,
-"homepage": "https://togin-dennis.github.io/ReelPeek/",
+  "homepage": "https://togin-dennis.github.io/ReelPeek/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
@@ -14,7 +14,6 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.9.0",
     "bootstrap": "^5.3.6",
-    "gh-pages": "^6.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-fontawesome": "^1.7.1",
@@ -50,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
