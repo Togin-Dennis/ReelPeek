@@ -31,7 +31,7 @@
 - 🌐 Hosted freely on **GitHub Pages**
 
 
-<br>
+<br/><br/><br/>
 
 <p align="center">
   <img src="https://github.com/Togin-Dennis/ReelPeek/blob/main/ReelPeekHome.png?raw=true" alt="ReelPeek Demo Preview 1" width="45%" style="margin-right: 10px;">
