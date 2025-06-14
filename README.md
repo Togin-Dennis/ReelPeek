@@ -30,6 +30,9 @@
 - 🖥️ Enjoy a clean, mobile-responsive layout  
 - 🌐 Hosted freely on **GitHub Pages**
 
+
+<br>
+
 <p align="center">
   <img src="https://github.com/Togin-Dennis/ReelPeek/blob/main/ReelPeekHome.png?raw=true" alt="ReelPeek Demo Preview 1" width="45%" style="margin-right: 10px;">
   <img src="https://github.com/Togin-Dennis/ReelPeek/blob/main/DetailsPage.png?raw=true" alt="ReelPeek Demo Preview 2" width="45%">
