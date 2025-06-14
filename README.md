@@ -31,8 +31,8 @@
 - 🌐 Hosted freely on **GitHub Pages**
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Togin-Dennis/ReelPeek/main/public/preview.gif" alt="ReelPeek Demo Preview 1" width="45%" style="margin-right: 10px;">
-  <img src="https://raw.githubusercontent.com/Togin-Dennis/ReelPeek/main/public/screenshot.png" alt="ReelPeek Demo Preview 2" width="45%">
+  <img src="https://github.com/Togin-Dennis/ReelPeek/blob/main/ReelPeekHome.png?raw=true" alt="ReelPeek Demo Preview 1" width="45%" style="margin-right: 10px;">
+  <img src="https://github.com/Togin-Dennis/ReelPeek/blob/main/DetailsPage.png?raw=true" alt="ReelPeek Demo Preview 2" width="45%">
 </p>
 
 ---
